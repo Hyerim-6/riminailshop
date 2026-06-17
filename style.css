@@ -70,7 +70,8 @@ nav ul li a:hover {
 }
 
 .hero-text{
-  width:500px;
+    width:100%;
+    max-width:500px
 }
 
 .small-title{
@@ -84,7 +85,7 @@ nav ul li a:hover {
 }
 
 .hero h1{
-    font-size:64px;
+    font-size:clamp(32px, 6vw, 64px);
 
     line-height:1.25;
 
@@ -339,4 +340,99 @@ footer{
     }
 }
 
+/* 태블릿 */
+@media (max-width: 1024px){
 
+    .hero{
+        padding:100px 50px 70px;
+    }
+
+    .hero-text{
+        width:100%;
+        max-width:500px;
+    }
+
+    .hero h1{
+        font-size:52px;
+    }
+
+}
+
+/* 모바일 */
+@media (max-width: 768px){
+
+    .hero{
+        min-height:100vh;
+        padding:100px 25px 60px;
+        text-align:center;
+    }
+
+    .hero-text{
+        width:100%;
+    }
+
+    .small-title{
+        font-size:13px;
+        letter-spacing:2px;
+    }
+
+    .hero h1{
+        font-size:42px;
+        white-space:normal;
+    }
+
+    .hero-line{
+        margin:0 auto 25px;
+    }
+
+    .hero-description{
+        max-width:100%;
+        font-size:16px;
+        line-height:1.8;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .btn{
+        padding:15px 32px;
+        font-size:16px;
+    }
+
+}
+
+@media (max-width: 480px){
+
+    .hero{
+        padding:90px 20px 50px;
+    }
+
+    .hero h1{
+        font-size:32px;
+    }
+
+    .hero-description{
+        font-size:15px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        width:100%;
+    }
+
+    .btn{
+        width:100%;
+        text-align:center;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .hero{
+        background-position:right center;
+    }
+
+}
