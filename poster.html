@@ -3,8 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>포스터 디자인 상세 페이지</title>
+    <title>민트코어 네일 상세페이지</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Pretendard',sans-serif;
+}
+
+body{
+    background:#f4faf8;
+    color:#4b7f74;
+}
+
+nav{
+    background:white;
+    padding:20px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #d8ece7;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:700;
+}
+
+.menu{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+.menu a{
+    text-decoration:none;
+    color:#4b7f74;
+    font-weight:600;
+}
+
+.container{
+    max-width:1200px;
+    margin:60px auto;
+    padding:20px;
+}
+
+.product{
+    background:white;
+    border-radius:30px;
+    padding:50px;
+    display:flex;
+    gap:50px;
+    align-items:center;
+    box-shadow:0 4px 20px rgba(0,0,0,0.05);
+}
+
+.product-image{
+    flex:1;
+}
+
+.product-image img{
+    width:100%;
+    border-radius:20px;
+    display:block;
+}
+
+.product-info{
+    flex:1;
+}
+
+.category{
+    color:#7cc7b5;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+.product-info h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.description{
+    color:#6d9d92;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.price{
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:30px;
+}
+
+.buttons{
+    display:flex;
+    gap:15px;
+}
+
+.btn{
+    padding:15px 35px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.buy{
+    background:#7cc7b5;
+    color:white;
+}
+
+.cart{
+    border:2px solid #7cc7b5;
+    color:#4b7f74;
+}
+
+.detail{
+    background:white;
+    margin-top:40px;
+    padding:50px;
+    border-radius:30px;
+    box-shadow:0 4px 20px rgba(0,0,0,0.05);
+}
+
+.detail h2{
+    margin-bottom:20px;
+}
+
+.detail h3{
+    margin-top:30px;
+    margin-bottom:15px;
+}
+
+.detail p{
+    line-height:1.8;
+    color:#6d9d92;
+}
+
+.detail ul{
+    line-height:2;
+    color:#6d9d92;
+    padding-left:20px;
+}
+
+.detail img{
+    width:100%;
+    border-radius:20px;
+    margin-top:30px;
+}
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .product{
+        flex-direction:column;
+        padding:30px;
+    }
+
+    .product-info h1{
+        font-size:36px;
+    }
+
+    .buttons{
+        flex-direction:column;
+    }
+
+    .btn{
+        text-align:center;
+    }
+}
+
+</style>
 </head>
 <body>
     <nav>
@@ -16,5 +191,110 @@
         <li><a href="index.html#contact">Contact</a></li>     
     </ul>
     </nav>
+
+    <div class="container">
+
+    <div class="product">
+
+        <div class="product-image">
+            <img src="https://mkbc1vct1qumyge6.public.blob.vercel-storage.com/details/first/%EB%AF%BC%ED%8A%B8%EB%84%A4%EC%9D%BC%20%EC%83%81%EC%84%B8%EC%83%B7.png">
+        </div>
+
+        <div class="product-info">
+
+            <p class="category">MINT NAIL TIP</p>
+
+            <h1>민트코어 네일팁</h1>
+
+            <p class="description">
+                은은한 민트 컬러와 글로시한 광택이 매력적인 프리미엄 네일팁입니다.
+                데일리룩부터 특별한 날까지 자연스럽게 어울리는 디자인으로 손끝에 포인트를 더해보세요.
+            </p>
+
+            <div class="price">₩12,900</div>
+
+            <div class="buttons">
+                <a href="#" class="btn buy">구매하기</a>
+                <a href="#" class="btn cart">장바구니</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="detail">
+
+        <h2>상품 상세정보</h2>
+
+        <p>
+            부드러운 민트 컬러와 자연스러운 광택이 조화를 이루는 네일팁입니다.
+            셀프 네일 초보자도 간편하게 사용할 수 있으며,
+            데일리룩부터 하객룩까지 다양한 스타일에 잘 어울립니다.
+        </p>
+
+        <h3>PRODUCT INFO</h3>
+
+        <ul>
+            <li>상품명 : 민트 글로우 네일팁</li>
+            <li>카테고리 : 프리미엄 네일팁</li>
+            <li>컬러 : 민트 · 화이트 · 실버</li>
+            <li>구성 : 네일팁 24pcs</li>
+            <li>사이즈 : XS ~ L</li>
+            <li>제조국 : 대한민국</li>
+        </ul>
+
+        <h3>POINT</h3>
+
+        <ul>
+            <li>은은한 민트 컬러</li>
+            <li>글로시 광택 마감</li>
+            <li>셀프 네일 가능</li>
+            <li>부착 및 제거 간편</li>
+            <li>데일리 네일 추천</li>
+        </ul>
+
+        <h3>구성품</h3>
+
+        <ul>
+            <li>네일팁 24pcs</li>
+            <li>젤 스티커</li>
+            <li>우드 스틱</li>
+            <li>알코올 패드</li>
+            <li>사용 설명서</li>
+        </ul>
+
+        <h3>추천 대상</h3>
+
+        <ul>
+            <li>민트 컬러를 좋아하는 분</li>
+            <li>셀프 네일을 즐기는 분</li>
+            <li>깔끔한 디자인을 선호하는 분</li>
+            <li>특별한 날 포인트를 주고 싶은 분</li>
+        </ul>
+
+        <h3>배송 안내</h3>
+
+        <ul>
+            <li>평일 기준 1~3일 내 발송</li>
+            <li>주말 및 공휴일 제외</li>
+            <li>3만원 이상 구매 시 무료배송</li>
+        </ul>
+
+        <h3>교환 및 환불</h3>
+
+        <ul>
+            <li>상품 수령 후 7일 이내 가능</li>
+            <li>사용한 제품은 교환 및 환불 불가</li>
+            <li>상품 불량 시 무료 교환 가능</li>
+        </ul>
+
+        <img src=https://mkbc1vct1qumyge6.public.blob.vercel-storage.com/details/first/%EB%AF%BC%ED%8A%B8%EB%84%A4%EC%9D%BC%20%EC%83%81%EC%84%B8%EC%83%B7.png>
+
+    </div>
+
+</div>
+
 </body>
 </html>
+
+

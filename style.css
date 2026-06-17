@@ -38,8 +38,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color:#7c3aed;
-
+    color:#9bb09d;
 }
 
 .logo {
@@ -145,7 +144,8 @@ nav ul li a:hover {
 }
 
 .first:hover{
-    background-color: #f3f4f6;
+    background-color:#7f9581;
+    transform:translateY(-3px);
 }
 
 .second{
@@ -157,13 +157,15 @@ nav ul li a:hover {
 }
 
 .second:hover{
-    background-color: white;
-    color:#1e2a78;
+    background-color:#9bb09d;
+    color:white;
+    transform:translateY(-3px);
 }
 
 section{
     background-color: white;
-    width: 1000px;
+    max-width: 1200px;
+    width: 90%;
     margin: 60px auto;
     padding: 40px;
     border-radius: 20px;
@@ -173,17 +175,17 @@ section{
 section h2{
     font-size: 28px;
     margin-bottom: 30px;
-    color: #1e2a78;
+    color: #7f9581;
 }
 
 .skills span{
     display: inline-block;
-    background-color: #eef2ff;
+    background-color: #eef3ee;
     padding: 8px 14px;
     border-radius: 20px;
     margin: 6px;
     font-size: 14px;
-    color: #4338ca;
+    color:#7f9581;
 }
 
 #about p{
@@ -233,7 +235,7 @@ footer{
 }
 
 .card a{
-    color: #7c3aed;
+    color: #7f9581;
     text-decoration: none;
     font-weight: bold;
 }
@@ -256,9 +258,9 @@ footer{
 }
 
 .portfolio-grid{
-    display:flex;
-    gap: 20px;
-    flex-wrap: wrap;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
 }
 
 .contact-form label{
@@ -281,7 +283,7 @@ footer{
 
 .contact-form input[type="submit"]{
     margin-top: 20px;
-    background-color: #1e2a78;
+    background-color: #9bb09d;
     color: white;
     width: 200px;
     font-size: 16px;
@@ -291,7 +293,7 @@ footer{
 }
 
 .contact-form input[type="submit"]:hover{
-    background-color: #7c3aed;
+    background-color: #7f9581;
     transform: translate(0,-4px);
 }
 
